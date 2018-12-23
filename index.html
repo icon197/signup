@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Singup</title>
+
+    <!-- decription -->
+    <meta name="description" content="Challenge signup page for Thinkful's front end web development course">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- nomalize -->
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/logo.png" alt="logo-page" class="logo-image">
+    </div>
+
+    <form action="/signup" method="post" class="signup-form">
+        <fieldset>
+            <legend class="title">Sign up</legend>
+            <label for="user-email" class="label">Email</label>
+            <input type="email" placeholder="foo@bar.com" id="user-email" name="user-email" autocomplete="off" required class="input email">
+            <label for="user-password" class="label">Password</label>
+            <input type="password" placeholder="1234passw0rd" id="user-password" name="user-password" autocomplete="new-password" required class="input password">
+            <button type="submit" class="input submit">Signup</button>
+        </fieldset>
+    </form>
+
+    <footer class="footer">
+        <p>Already have an account? <a href="/login">Log in</a></p>
+    </footer>
+</body>
+</html>
